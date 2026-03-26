@@ -140,8 +140,9 @@ function Pricing() {
           <h3 className="font-bold text-lg">Starter</h3>
           <p className="text-xl font-semibold">₹3499</p>
           <ul className="mt-4 text-sm space-y-2">
-            <li>WhatsApp integration</li>
-            <li>Instagram integration</li>
+            <li>Product Listing</li>
+            <li>Geolocation</li> 
+            <li>Social Media Integration</li>
           </ul>
         </div>
 
