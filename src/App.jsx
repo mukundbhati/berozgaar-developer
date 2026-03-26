@@ -61,7 +61,7 @@ function Features() {
 
 function Testimonials() {
   const data = [
-    "Got my business online in days",
+    "Got my business online in few days",
     "Affordable and actually useful for my business.",
     "Customers now find us easily on Google."
   ];
@@ -87,7 +87,7 @@ function DemoPage() {
         <h1 className="text-4xl font-bold">Brew Haven Cafe</h1>
         <p className="mt-2">Coffee. Conversations. Comfort.</p>
         <p className="mt-2 text-sm text-gray-600">
-          This is what a ₹3499 website looks like
+          This is what our starter package looks like
         </p>
       </div>
 
@@ -118,7 +118,7 @@ function DemoPage() {
       <div className="p-10 text-center">
         <h2 className="text-2xl font-semibold">Contact</h2>
         <p className="mt-4">📍 Jaipur</p>
-        <p>📞 9876543210</p>
+        <p>📞 98xxxxxxxx</p>
         <p className="mt-2">📧 your.mail@gmail.com</p>
 
         <div className="flex justify-center gap-4 mt-6 text-white">
