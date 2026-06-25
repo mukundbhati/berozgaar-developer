@@ -1,8 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const WA_LINK = "https://wa.me/919269048587";
 const IG_LINK = "https://instagram.com/berozgaar_developer";
+const DEMO_LINK = "https://zaraaga-demo-s3dy.vercel.app/";
 
 function Navbar() {
   return (
@@ -24,9 +25,14 @@ function Hero() {
         Clean, modern websites starting at ₹3499
       </p>
       <div className="mt-6 flex justify-center">
-        <Link to="/demo" className="px-8 py-3 bg-black text-white rounded-xl hover:scale-105 transition">
+        <a
+          href={DEMO_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-8 py-3 bg-black text-white rounded-xl hover:scale-105 transition"
+        >
           See your future site
-        </Link>
+        </a>
       </div>
       <p className="mt-4 text-sm text-gray-600">
         No technical knowledge needed • Perfect for small businesses
@@ -75,58 +81,6 @@ function Testimonials() {
         ))}
       </div>
     </section>
-  );
-}
-
-// DEMO PAGE
-function DemoPage() {
-  return (
-    <div className="bg-[#fdf6f0] text-gray-800">
-
-      <div className="text-center py-16 bg-[#f5e6da]">
-        <h1 className="text-4xl font-bold">Brew Haven Cafe</h1>
-        <p className="mt-2">Coffee. Conversations. Comfort.</p>
-        <p className="mt-2 text-sm text-gray-600">
-          This is what our starter package looks like
-        </p>
-      </div>
-
-      <div className="p-10">
-        <img 
-          src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
-          alt="cafe"
-          className="rounded-xl w-full h-64 object-cover"
-        />
-      </div>
-
-      <div className="p-10 text-center">
-        <h2 className="text-2xl font-semibold">About Us</h2>
-        <p className="mt-4 max-w-xl mx-auto">
-          A small cozy cafe where you can relax, enjoy fresh coffee, and spend quality time.
-        </p>
-      </div>
-
-      <div className="p-10 bg-white text-center">
-        <h2 className="text-2xl font-semibold">Menu</h2>
-        <div className="mt-6 grid md:grid-cols-3 gap-6">
-          <div className="p-4 bg-[#fdf6f0] rounded shadow">Pizza</div>
-          <div className="p-4 bg-[#fdf6f0] rounded shadow">Cold Coffee</div>
-          <div className="p-4 bg-[#fdf6f0] rounded shadow">Sandwich</div>
-        </div>
-      </div>
-
-      <div className="p-10 text-center">
-        <h2 className="text-2xl font-semibold">Contact</h2>
-        <p className="mt-4">📍 Jaipur</p>
-        <p>📞 98xxxxxxxx</p>
-        <p className="mt-2">📧 your.mail@gmail.com</p>
-
-        <div className="flex justify-center gap-4 mt-6 text-white">
-          <a href={WA_LINK} className="p-3 bg-green-500 rounded-full">💬</a>
-          <a href={IG_LINK} className="p-3 bg-pink-500 rounded-full">📷</a>
-        </div>
-      </div>
-    </div>
   );
 }
 
@@ -218,7 +172,7 @@ function CTA() {
   return (
     <section className="p-10 bg-black text-white text-center">
       <h2 className="text-2xl font-semibold">Ready to grow your business?</h2>
-      <p className="mt-2">Let’s get you online today</p>
+      <p className="mt-2">Let's get you online today</p>
 
       <div className="flex justify-center gap-4 mt-6">
         <a href={WA_LINK} className="p-3 bg-green-500 rounded-full">💬</a>
@@ -251,7 +205,6 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/demo" element={<DemoPage />} />
       </Routes>
     </Router>
   );
